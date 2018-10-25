@@ -112,6 +112,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="snJ-ap-ClQ"/>
                     <connections>
+                        <outlet property="nextButton" destination="Z8g-cc-MKf" id="v1o-cb-cVp"/>
                         <outlet property="stepsCollectionView" destination="LGN-Og-DzL" id="hpG-1O-O1h"/>
                         <outlet property="stepsLabel" destination="Iw7-YD-nXV" id="0ND-Pp-0b3"/>
                     </connections>

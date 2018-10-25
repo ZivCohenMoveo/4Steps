@@ -14,6 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var curStep = 1
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var stepsCollectionView: UICollectionView!
+    @IBOutlet weak var nextButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -79,6 +80,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             stepsCollectionView.scrollToItem(at: IndexPath.init(row: curStep - 1, section: 0), at: .centeredHorizontally, animated: true)
         }
+        if curStep < numOfSteps {
+            nextButton.setTitle("Next", for: .normal)
+        }
     }
     
     @IBAction func nextAction(_ sender: Any) {
@@ -88,6 +92,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             stepsLabel.text = "Step \(curStep)"
             
             stepsCollectionView.scrollToItem(at: IndexPath.init(row: curStep - 1, section: 0), at: .centeredHorizontally, animated: true)
+        }
+        if curStep == numOfSteps{
+            nextButton.setTitle("Finish", for: .normal)
         }
         
     }
