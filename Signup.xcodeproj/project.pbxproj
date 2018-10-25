@@ -13,6 +13,14 @@
 		A642219B2181A73B0018A7F4 /* Signup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A64221992181A73B0018A7F4 /* Signup.xcdatamodeld */; };
 		A642219D2181A73D0018A7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A642219C2181A73D0018A7F4 /* Assets.xcassets */; };
 		A64221A02181A73D0018A7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A642219E2181A73D0018A7F4 /* LaunchScreen.storyboard */; };
+		A64221AD2181B5BC0018A7F4 /* CollectionViewRedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221AB2181B5BC0018A7F4 /* CollectionViewRedCell.swift */; };
+		A64221AE2181B5BC0018A7F4 /* CollectionViewRedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221AC2181B5BC0018A7F4 /* CollectionViewRedCell.xib */; };
+		A64221B12181B5DA0018A7F4 /* CollectionViewBlueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221AF2181B5DA0018A7F4 /* CollectionViewBlueCell.swift */; };
+		A64221B22181B5DA0018A7F4 /* CollectionViewBlueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221B02181B5DA0018A7F4 /* CollectionViewBlueCell.xib */; };
+		A64221B72181B6290018A7F4 /* CollectionViewGreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221B52181B6290018A7F4 /* CollectionViewGreenCell.swift */; };
+		A64221B82181B6290018A7F4 /* CollectionViewGreenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221B62181B6290018A7F4 /* CollectionViewGreenCell.xib */; };
+		A64221BB2181B64A0018A7F4 /* CollectionViewBlackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221B92181B64A0018A7F4 /* CollectionViewBlackCell.swift */; };
+		A64221BC2181B64A0018A7F4 /* CollectionViewBlackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221BA2181B64A0018A7F4 /* CollectionViewBlackCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		A642219C2181A73D0018A7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A642219F2181A73D0018A7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64221A12181A73D0018A7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64221AB2181B5BC0018A7F4 /* CollectionViewRedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewRedCell.swift; sourceTree = "<group>"; };
+		A64221AC2181B5BC0018A7F4 /* CollectionViewRedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewRedCell.xib; sourceTree = "<group>"; };
+		A64221AF2181B5DA0018A7F4 /* CollectionViewBlueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBlueCell.swift; sourceTree = "<group>"; };
+		A64221B02181B5DA0018A7F4 /* CollectionViewBlueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewBlueCell.xib; sourceTree = "<group>"; };
+		A64221B52181B6290018A7F4 /* CollectionViewGreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewGreenCell.swift; sourceTree = "<group>"; };
+		A64221B62181B6290018A7F4 /* CollectionViewGreenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewGreenCell.xib; sourceTree = "<group>"; };
+		A64221B92181B64A0018A7F4 /* CollectionViewBlackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBlackCell.swift; sourceTree = "<group>"; };
+		A64221BA2181B64A0018A7F4 /* CollectionViewBlackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewBlackCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,14 @@
 				A642219E2181A73D0018A7F4 /* LaunchScreen.storyboard */,
 				A64221A12181A73D0018A7F4 /* Info.plist */,
 				A64221992181A73B0018A7F4 /* Signup.xcdatamodeld */,
+				A64221AB2181B5BC0018A7F4 /* CollectionViewRedCell.swift */,
+				A64221AC2181B5BC0018A7F4 /* CollectionViewRedCell.xib */,
+				A64221AF2181B5DA0018A7F4 /* CollectionViewBlueCell.swift */,
+				A64221B02181B5DA0018A7F4 /* CollectionViewBlueCell.xib */,
+				A64221B52181B6290018A7F4 /* CollectionViewGreenCell.swift */,
+				A64221B62181B6290018A7F4 /* CollectionViewGreenCell.xib */,
+				A64221B92181B64A0018A7F4 /* CollectionViewBlackCell.swift */,
+				A64221BA2181B64A0018A7F4 /* CollectionViewBlackCell.xib */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -125,9 +149,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64221B82181B6290018A7F4 /* CollectionViewGreenCell.xib in Resources */,
+				A64221AE2181B5BC0018A7F4 /* CollectionViewRedCell.xib in Resources */,
 				A64221A02181A73D0018A7F4 /* LaunchScreen.storyboard in Resources */,
 				A642219D2181A73D0018A7F4 /* Assets.xcassets in Resources */,
 				A64221982181A73B0018A7F4 /* Main.storyboard in Resources */,
+				A64221B22181B5DA0018A7F4 /* CollectionViewBlueCell.xib in Resources */,
+				A64221BC2181B64A0018A7F4 /* CollectionViewBlackCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64221AD2181B5BC0018A7F4 /* CollectionViewRedCell.swift in Sources */,
+				A64221B12181B5DA0018A7F4 /* CollectionViewBlueCell.swift in Sources */,
+				A64221B72181B6290018A7F4 /* CollectionViewGreenCell.swift in Sources */,
+				A64221BB2181B64A0018A7F4 /* CollectionViewBlackCell.swift in Sources */,
 				A64221952181A73B0018A7F4 /* ViewController.swift in Sources */,
 				A64221932181A73B0018A7F4 /* AppDelegate.swift in Sources */,
 				A642219B2181A73B0018A7F4 /* Signup.xcdatamodeld in Sources */,
@@ -285,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8497HM7PW;
 				INFOPLIST_FILE = Signup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8497HM7PW;
 				INFOPLIST_FILE = Signup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
