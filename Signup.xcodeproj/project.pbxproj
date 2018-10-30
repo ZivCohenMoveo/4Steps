@@ -13,17 +13,21 @@
 		A642219B2181A73B0018A7F4 /* Signup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A64221992181A73B0018A7F4 /* Signup.xcdatamodeld */; };
 		A642219D2181A73D0018A7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A642219C2181A73D0018A7F4 /* Assets.xcassets */; };
 		A64221A02181A73D0018A7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A642219E2181A73D0018A7F4 /* LaunchScreen.storyboard */; };
-		A64221AD2181B5BC0018A7F4 /* CollectionViewRedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221AB2181B5BC0018A7F4 /* CollectionViewRedCell.swift */; };
-		A64221AE2181B5BC0018A7F4 /* CollectionViewRedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221AC2181B5BC0018A7F4 /* CollectionViewRedCell.xib */; };
-		A64221B12181B5DA0018A7F4 /* CollectionViewBlueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221AF2181B5DA0018A7F4 /* CollectionViewBlueCell.swift */; };
-		A64221B22181B5DA0018A7F4 /* CollectionViewBlueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221B02181B5DA0018A7F4 /* CollectionViewBlueCell.xib */; };
-		A64221B72181B6290018A7F4 /* CollectionViewGreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221B52181B6290018A7F4 /* CollectionViewGreenCell.swift */; };
-		A64221B82181B6290018A7F4 /* CollectionViewGreenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221B62181B6290018A7F4 /* CollectionViewGreenCell.xib */; };
-		A64221BB2181B64A0018A7F4 /* CollectionViewBlackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64221B92181B64A0018A7F4 /* CollectionViewBlackCell.swift */; };
-		A64221BC2181B64A0018A7F4 /* CollectionViewBlackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64221BA2181B64A0018A7F4 /* CollectionViewBlackCell.xib */; };
+		CA278CC52188C1710079812F /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA278CC42188C1700079812F /* TextFieldView.xib */; };
+		CA278CC92188C40E0079812F /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA278CC72188C40E0079812F /* CitiesTableViewCell.swift */; };
+		CA278CCA2188C40E0079812F /* CitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA278CC82188C40E0079812F /* CitiesTableViewCell.xib */; };
+		CA45D1F02187046300CFA7C4 /* GoogleAutocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D1EF2187046300CFA7C4 /* GoogleAutocomplete.swift */; };
+		CA45D1F2218710D900CFA7C4 /* TextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D1F1218710D900CFA7C4 /* TextFieldModel.swift */; };
+		CABA16DC2185C17B007FE918 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16DA2185C17B007FE918 /* CollectionViewCell.swift */; };
+		CABA16DD2185C17B007FE918 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABA16DB2185C17B007FE918 /* CollectionViewCell.xib */; };
+		CABA16E12185DB70007FE918 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16E02185DB70007FE918 /* Steps.swift */; };
+		CABA16E32185F0AD007FE918 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16E22185F0AD007FE918 /* TextFieldView.swift */; };
+		E553CCCA1AD22CFB4AB5BA60 /* Pods_Signup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0755B72B1FF47D62E8164A18 /* Pods_Signup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0755B72B1FF47D62E8164A18 /* Pods_Signup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Signup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54431098D6FA10E4019A6406 /* Pods-Signup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signup.release.xcconfig"; path = "Pods/Target Support Files/Pods-Signup/Pods-Signup.release.xcconfig"; sourceTree = "<group>"; };
 		A642218F2181A73B0018A7F4 /* Signup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64221922181A73B0018A7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A64221942181A73B0018A7F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,14 +36,16 @@
 		A642219C2181A73D0018A7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A642219F2181A73D0018A7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64221A12181A73D0018A7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A64221AB2181B5BC0018A7F4 /* CollectionViewRedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewRedCell.swift; sourceTree = "<group>"; };
-		A64221AC2181B5BC0018A7F4 /* CollectionViewRedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewRedCell.xib; sourceTree = "<group>"; };
-		A64221AF2181B5DA0018A7F4 /* CollectionViewBlueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBlueCell.swift; sourceTree = "<group>"; };
-		A64221B02181B5DA0018A7F4 /* CollectionViewBlueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewBlueCell.xib; sourceTree = "<group>"; };
-		A64221B52181B6290018A7F4 /* CollectionViewGreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewGreenCell.swift; sourceTree = "<group>"; };
-		A64221B62181B6290018A7F4 /* CollectionViewGreenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewGreenCell.xib; sourceTree = "<group>"; };
-		A64221B92181B64A0018A7F4 /* CollectionViewBlackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBlackCell.swift; sourceTree = "<group>"; };
-		A64221BA2181B64A0018A7F4 /* CollectionViewBlackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewBlackCell.xib; sourceTree = "<group>"; };
+		ACC9A83EC5BA55B6E325062F /* Pods-Signup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Signup/Pods-Signup.debug.xcconfig"; sourceTree = "<group>"; };
+		CA278CC42188C1700079812F /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		CA278CC72188C40E0079812F /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		CA278CC82188C40E0079812F /* CitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesTableViewCell.xib; sourceTree = "<group>"; };
+		CA45D1EF2187046300CFA7C4 /* GoogleAutocomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAutocomplete.swift; sourceTree = "<group>"; };
+		CA45D1F1218710D900CFA7C4 /* TextFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModel.swift; sourceTree = "<group>"; };
+		CABA16DA2185C17B007FE918 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CABA16DB2185C17B007FE918 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		CABA16E02185DB70007FE918 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		CABA16E22185F0AD007FE918 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E553CCCA1AD22CFB4AB5BA60 /* Pods_Signup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D5E41CBE30AEB4D9362913A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9A83EC5BA55B6E325062F /* Pods-Signup.debug.xcconfig */,
+				54431098D6FA10E4019A6406 /* Pods-Signup.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A64221862181A73B0018A7F4 = {
 			isa = PBXGroup;
 			children = (
 				A64221912181A73B0018A7F4 /* Signup */,
 				A64221902181A73B0018A7F4 /* Products */,
+				8D5E41CBE30AEB4D9362913A /* Pods */,
+				DD48E2B0CC1F901998FBBA59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,23 +90,64 @@
 		A64221912181A73B0018A7F4 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				CA278CC62188C3D90079812F /* Cells */,
+				CA45D1EE218700F900CFA7C4 /* GooglePlaces */,
 				A64221922181A73B0018A7F4 /* AppDelegate.swift */,
-				A64221942181A73B0018A7F4 /* ViewController.swift */,
-				A64221962181A73B0018A7F4 /* Main.storyboard */,
-				A642219C2181A73D0018A7F4 /* Assets.xcassets */,
-				A642219E2181A73D0018A7F4 /* LaunchScreen.storyboard */,
+				CA45D1ED21862A3400CFA7C4 /* Pager */,
+				CABA16E22185F0AD007FE918 /* TextFieldView.swift */,
+				CA45D1F1218710D900CFA7C4 /* TextFieldModel.swift */,
+				CA278CC42188C1700079812F /* TextFieldView.xib */,
 				A64221A12181A73D0018A7F4 /* Info.plist */,
-				A64221992181A73B0018A7F4 /* Signup.xcdatamodeld */,
-				A64221AB2181B5BC0018A7F4 /* CollectionViewRedCell.swift */,
-				A64221AC2181B5BC0018A7F4 /* CollectionViewRedCell.xib */,
-				A64221AF2181B5DA0018A7F4 /* CollectionViewBlueCell.swift */,
-				A64221B02181B5DA0018A7F4 /* CollectionViewBlueCell.xib */,
-				A64221B52181B6290018A7F4 /* CollectionViewGreenCell.swift */,
-				A64221B62181B6290018A7F4 /* CollectionViewGreenCell.xib */,
-				A64221B92181B64A0018A7F4 /* CollectionViewBlackCell.swift */,
-				A64221BA2181B64A0018A7F4 /* CollectionViewBlackCell.xib */,
+				CA45D1EC21862A0500CFA7C4 /* Supporting Files */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		CA278CC62188C3D90079812F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA278CC72188C40E0079812F /* CitiesTableViewCell.swift */,
+				CA278CC82188C40E0079812F /* CitiesTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CA45D1EC21862A0500CFA7C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A64221962181A73B0018A7F4 /* Main.storyboard */,
+				A642219E2181A73D0018A7F4 /* LaunchScreen.storyboard */,
+				A642219C2181A73D0018A7F4 /* Assets.xcassets */,
+				A64221992181A73B0018A7F4 /* Signup.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA45D1ED21862A3400CFA7C4 /* Pager */ = {
+			isa = PBXGroup;
+			children = (
+				CABA16E02185DB70007FE918 /* Steps.swift */,
+				A64221942181A73B0018A7F4 /* ViewController.swift */,
+				CABA16DA2185C17B007FE918 /* CollectionViewCell.swift */,
+				CABA16DB2185C17B007FE918 /* CollectionViewCell.xib */,
+			);
+			path = Pager;
+			sourceTree = "<group>";
+		};
+		CA45D1EE218700F900CFA7C4 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				CA45D1EF2187046300CFA7C4 /* GoogleAutocomplete.swift */,
+			);
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		DD48E2B0CC1F901998FBBA59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0755B72B1FF47D62E8164A18 /* Pods_Signup.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A64221A42181A73D0018A7F4 /* Build configuration list for PBXNativeTarget "Signup" */;
 			buildPhases = (
+				8A5AF69525B48FF55B88AC5E /* [CP] Check Pods Manifest.lock */,
 				A642218B2181A73B0018A7F4 /* Sources */,
 				A642218C2181A73B0018A7F4 /* Frameworks */,
 				A642218D2181A73B0018A7F4 /* Resources */,
+				E4E9F1AB45FA98659A75017D /* [CP] Copy Pods Resources */,
+				2279160F4D4CE7AEC282BFC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +185,7 @@
 				TargetAttributes = {
 					A642218E2181A73B0018A7F4 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -149,28 +212,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64221B82181B6290018A7F4 /* CollectionViewGreenCell.xib in Resources */,
-				A64221AE2181B5BC0018A7F4 /* CollectionViewRedCell.xib in Resources */,
+				CA278CCA2188C40E0079812F /* CitiesTableViewCell.xib in Resources */,
+				CA278CC52188C1710079812F /* TextFieldView.xib in Resources */,
 				A64221A02181A73D0018A7F4 /* LaunchScreen.storyboard in Resources */,
 				A642219D2181A73D0018A7F4 /* Assets.xcassets in Resources */,
 				A64221982181A73B0018A7F4 /* Main.storyboard in Resources */,
-				A64221B22181B5DA0018A7F4 /* CollectionViewBlueCell.xib in Resources */,
-				A64221BC2181B64A0018A7F4 /* CollectionViewBlackCell.xib in Resources */,
+				CABA16DD2185C17B007FE918 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2279160F4D4CE7AEC282BFC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Signup/Pods-Signup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Signup/Pods-Signup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5AF69525B48FF55B88AC5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Signup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4E9F1AB45FA98659A75017D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Signup/Pods-Signup-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Signup/Pods-Signup-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A642218B2181A73B0018A7F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64221AD2181B5BC0018A7F4 /* CollectionViewRedCell.swift in Sources */,
-				A64221B12181B5DA0018A7F4 /* CollectionViewBlueCell.swift in Sources */,
-				A64221B72181B6290018A7F4 /* CollectionViewGreenCell.swift in Sources */,
-				A64221BB2181B64A0018A7F4 /* CollectionViewBlackCell.swift in Sources */,
+				CABA16DC2185C17B007FE918 /* CollectionViewCell.swift in Sources */,
+				CA45D1F2218710D900CFA7C4 /* TextFieldModel.swift in Sources */,
 				A64221952181A73B0018A7F4 /* ViewController.swift in Sources */,
+				CA278CC92188C40E0079812F /* CitiesTableViewCell.swift in Sources */,
+				CABA16E32185F0AD007FE918 /* TextFieldView.swift in Sources */,
+				CABA16E12185DB70007FE918 /* Steps.swift in Sources */,
+				CA45D1F02187046300CFA7C4 /* GoogleAutocomplete.swift in Sources */,
 				A64221932181A73B0018A7F4 /* AppDelegate.swift in Sources */,
 				A642219B2181A73B0018A7F4 /* Signup.xcdatamodeld in Sources */,
 			);
@@ -314,36 +451,40 @@
 		};
 		A64221A52181A73D0018A7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC9A83EC5BA55B6E325062F /* Pods-Signup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8497HM7PW;
 				INFOPLIST_FILE = Signup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = moveo.Signup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A64221A62181A73D0018A7F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54431098D6FA10E4019A6406 /* Pods-Signup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8497HM7PW;
 				INFOPLIST_FILE = Signup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = moveo.Signup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

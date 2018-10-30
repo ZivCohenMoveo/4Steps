@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="Signup" customModuleProvider="target">
+            <connections>
+                <outlet property="citiesTableView" destination="fPX-JJ-Riy" id="Q9K-Uo-xaA"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="2IG-7M-8P9"/>
+                <outlet property="textField" destination="l6S-l7-W3h" id="bMp-RX-v5Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TextFieldView" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="285"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-l7-W3h">
+                    <rect key="frame" x="0.0" y="0.0" width="548" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NpP-s1-Rs1"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldEditingChange:" destination="-1" eventType="editingChanged" id="qVG-BX-af5"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fPX-JJ-Riy">
+                    <rect key="frame" x="0.0" y="50" width="548" height="174"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="174" id="nZi-Rt-uzZ"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="l6S-l7-W3h" secondAttribute="trailing" id="DyT-3W-xSG"/>
+                <constraint firstItem="fPX-JJ-Riy" firstAttribute="top" secondItem="l6S-l7-W3h" secondAttribute="bottom" id="U7p-lT-y02"/>
+                <constraint firstItem="l6S-l7-W3h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bFT-dv-r2v"/>
+                <constraint firstItem="fPX-JJ-Riy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vOH-mt-skh"/>
+                <constraint firstItem="l6S-l7-W3h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vfd-GU-ybb"/>
+                <constraint firstItem="fPX-JJ-Riy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wwi-Oa-WkD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="403.19999999999999" y="-111.99400299850076"/>
+        </view>
+    </objects>
+</document>
