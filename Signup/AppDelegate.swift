@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import GoogleMaps
 import GooglePlaces
+import FBSDKCoreKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        GMSPlacesClient.provideAPIKey("AIzaSyCy4hwqouEXYMWLzAZiJ4Slta_3WptWj_Y")
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         return true
     }
@@ -45,6 +47,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: (options[.sourceApplication] as! String), annotation: options[.annotation])
     }
 
     // MARK: - Core Data stack
@@ -91,6 +99,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 

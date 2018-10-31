@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="548" height="285"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-l7-W3h">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-l7-W3h">
                     <rect key="frame" x="0.0" y="0.0" width="548" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="NpP-s1-Rs1"/>

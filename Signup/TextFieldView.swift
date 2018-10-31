@@ -38,11 +38,10 @@ class TextFieldView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableVie
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         textField.delegate = self
         textFieldModel.delegate = self
-        
     }
     
     @IBAction func textFieldEditingChange(_ sender: Any) {
-        
+    
         if let value = self.textField.text {
             if value != "" {
                 self.textFieldModel.valueChanged(value)
@@ -69,7 +68,6 @@ class TextFieldView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableVie
         citiesTableView.dataSource = self
         citiesTableView.register(UINib(nibName: CITY_TABLE_VIEW_CELL, bundle: nil), forCellReuseIdentifier: CITY_TABLE_VIEW_CELL)
         
-    
         UIView.transition(with: citiesTableView,
                           duration: 0.5,
                           options: .transitionCrossDissolve,
@@ -94,5 +92,12 @@ class TextFieldView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: CITY_TABLE_VIEW_CELL, for: indexPath) as! CitiesTableViewCell
         cell.initCell(text: textFieldModel.cities[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let seletedCity = textFieldModel.cities[indexPath.row]
+        textField.text = seletedCity
+        textFieldModel.selectedCity = seletedCity
+        removeTable()
     }
 }

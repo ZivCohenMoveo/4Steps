@@ -9,4 +9,8 @@ target 'Signup' do
     pod 'GooglePlaces', '= 2.7.0'
     pod 'Alamofire', '~> 4.7'
     pod 'SwiftyJSON', '~> 4.0'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKLoginKit'
+    
 end

@@ -16,6 +16,7 @@ class TextFieldModel: NSObject, AutoCompleteDelegate {
   
     var googleAutocomplete = GoogleAutocomplete()
     var cities = [String]()
+    var selectedCity = ""
     var delegate : CitiesListDelegate!
     
     func valueChanged(_ value: String){

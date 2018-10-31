@@ -7,23 +7,49 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, FBSDKLoginButtonDelegate {
     
-    let numOfSteps = 4
-    var curStep = 1
-
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var stepsCollectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var textFieldView: UIView!
-
+    @IBOutlet weak var progressBarContainer: UIView!
+    @IBOutlet weak var headerView: UIView!
+    
+    let numOfSteps = 4
+    var curStep = 1
+    var curPartOfSteps = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         stepsLabel.text = "Step \(curStep)"
         initCollectionView()
+        changeProgressBar()
+        
+        let btnFBLogin = FBSDKLoginButton()
+        btnFBLogin.readPermissions = ["public_profile", "email", "user_friends"]
+        btnFBLogin.delegate = self
+        btnFBLogin.center = self.view.center
+        self.view.addSubview(btnFBLogin)
+        
+        if FBSDKAccessToken.current() != nil {
+            //
+        }
+        else {
+            //
+        }
+    }
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        //
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        //
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,6 +87,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             curStep -= 1
             stepsLabel.text = "Step \(curStep)"
             stepsCollectionView.scrollToItem(at: IndexPath.init(row: curStep - 1, section: 0), at: .centeredHorizontally, animated: true)
+            changeProgressBar()
+            
         }
         if curStep < numOfSteps {
             nextButton.setTitle("Next", for: .normal)
@@ -73,10 +101,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             curStep += 1
             stepsLabel.text = "Step \(curStep)"
             stepsCollectionView.scrollToItem(at: IndexPath.init(row: curStep - 1, section: 0), at: .centeredHorizontally, animated: true)
+            changeProgressBar()
         }
         if curStep == numOfSteps{
             nextButton.setTitle("Finish", for: .normal)
         }
+    }
+    
+    func changeProgressBar() {
         
+        let allBarWidth = self.progressBarContainer.frame.width
+        let widthOfPart = CGFloat(allBarWidth) / CGFloat(numOfSteps + 1)
+        
+        //self.progressBarContainer.subviews.forEach({ $0.removeFromSuperview() })
+        
+       let customView = UIView(frame: CGRect(x: 0 , y: 0, width: CGFloat(curStep) * widthOfPart, height: self.progressBarContainer.frame.height))
+       customView.backgroundColor = UIColor.red
+       self.progressBarContainer.addSubview(customView)
     }
 }
