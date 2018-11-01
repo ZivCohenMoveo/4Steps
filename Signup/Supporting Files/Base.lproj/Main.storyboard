@@ -43,14 +43,26 @@
                                             <action selector="backAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atj-GU-8VB"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y1-0X-VWh">
+                                        <rect key="frame" x="87.5" y="40" width="200" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="84r-Tq-SE5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="9Y1-0X-VWh" firstAttribute="centerX" secondItem="qyd-aD-G2B" secondAttribute="centerX" id="2dR-pp-8Sq"/>
                                     <constraint firstAttribute="trailing" secondItem="hUj-7d-iP6" secondAttribute="trailing" constant="15" id="90t-jU-UI3"/>
                                     <constraint firstItem="ee0-YZ-siR" firstAttribute="leading" secondItem="qyd-aD-G2B" secondAttribute="leading" constant="36" id="L0Z-nt-yVf"/>
                                     <constraint firstItem="Iw7-YD-nXV" firstAttribute="centerY" secondItem="qyd-aD-G2B" secondAttribute="centerY" id="NPz-jv-LbH"/>
                                     <constraint firstItem="Iw7-YD-nXV" firstAttribute="centerX" secondItem="qyd-aD-G2B" secondAttribute="centerX" id="XYc-rs-IOA"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Y1-0X-VWh" secondAttribute="bottom" constant="0.5" id="YVo-kx-kaB"/>
                                     <constraint firstItem="hUj-7d-iP6" firstAttribute="leading" secondItem="qyd-aD-G2B" secondAttribute="leading" constant="15" id="feQ-fy-clx"/>
+                                    <constraint firstItem="9Y1-0X-VWh" firstAttribute="top" secondItem="hUj-7d-iP6" secondAttribute="bottom" constant="27" id="mPI-2f-acR"/>
                                     <constraint firstItem="ee0-YZ-siR" firstAttribute="centerY" secondItem="qyd-aD-G2B" secondAttribute="centerY" id="pR2-jR-9m6"/>
                                     <constraint firstItem="hUj-7d-iP6" firstAttribute="top" secondItem="qyd-aD-G2B" secondAttribute="top" constant="8" id="qJ7-8T-KyV"/>
                                 </constraints>
@@ -101,7 +113,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCv-4q-qBR" customClass="TextFieldView" customModule="Signup" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCv-4q-qBR" customClass="GoogleAutocompleteView" customModule="Signup" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="111.5" width="250" height="235"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="235" id="XIe-R6-hbF"/>
@@ -136,6 +148,7 @@
                         <outlet property="stepsCollectionView" destination="LGN-Og-DzL" id="hpG-1O-O1h"/>
                         <outlet property="stepsLabel" destination="Iw7-YD-nXV" id="0ND-Pp-0b3"/>
                         <outlet property="textFieldView" destination="hCv-4q-qBR" id="3zX-TU-Loh"/>
+                        <outlet property="userDetails" destination="9Y1-0X-VWh" id="BXW-1U-Miv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

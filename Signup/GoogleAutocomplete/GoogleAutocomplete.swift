@@ -14,6 +14,7 @@ protocol AutoCompleteDelegate : AnyObject {
     func autoComplete(_ addresses : [String])
 }
 
+// google places api- autocomplete of cities
 class GoogleAutocomplete: NSObject {
    
     var delegate : AutoCompleteDelegate?

@@ -13,15 +13,17 @@
 		A642219B2181A73B0018A7F4 /* Signup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A64221992181A73B0018A7F4 /* Signup.xcdatamodeld */; };
 		A642219D2181A73D0018A7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A642219C2181A73D0018A7F4 /* Assets.xcassets */; };
 		A64221A02181A73D0018A7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A642219E2181A73D0018A7F4 /* LaunchScreen.storyboard */; };
-		CA278CC52188C1710079812F /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA278CC42188C1700079812F /* TextFieldView.xib */; };
+		CA278CC52188C1710079812F /* GoogleAutocompleteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA278CC42188C1700079812F /* GoogleAutocompleteView.xib */; };
 		CA278CC92188C40E0079812F /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA278CC72188C40E0079812F /* CitiesTableViewCell.swift */; };
 		CA278CCA2188C40E0079812F /* CitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA278CC82188C40E0079812F /* CitiesTableViewCell.xib */; };
 		CA45D1F02187046300CFA7C4 /* GoogleAutocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D1EF2187046300CFA7C4 /* GoogleAutocomplete.swift */; };
-		CA45D1F2218710D900CFA7C4 /* TextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D1F1218710D900CFA7C4 /* TextFieldModel.swift */; };
+		CA45D1F2218710D900CFA7C4 /* GoogleAutocompleteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D1F1218710D900CFA7C4 /* GoogleAutocompleteViewModel.swift */; };
 		CABA16DC2185C17B007FE918 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16DA2185C17B007FE918 /* CollectionViewCell.swift */; };
 		CABA16DD2185C17B007FE918 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABA16DB2185C17B007FE918 /* CollectionViewCell.xib */; };
 		CABA16E12185DB70007FE918 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16E02185DB70007FE918 /* Steps.swift */; };
-		CABA16E32185F0AD007FE918 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16E22185F0AD007FE918 /* TextFieldView.swift */; };
+		CABA16E32185F0AD007FE918 /* GoogleAutocompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA16E22185F0AD007FE918 /* GoogleAutocompleteView.swift */; };
+		CAD6393E218AECFD005C9481 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD6393D218AECFD005C9481 /* UserModel.swift */; };
+		CAD63940218AEE1A005C9481 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD6393F218AEE1A005C9481 /* PictureModel.swift */; };
 		E553CCCA1AD22CFB4AB5BA60 /* Pods_Signup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0755B72B1FF47D62E8164A18 /* Pods_Signup.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,15 +39,17 @@
 		A642219F2181A73D0018A7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64221A12181A73D0018A7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC9A83EC5BA55B6E325062F /* Pods-Signup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Signup/Pods-Signup.debug.xcconfig"; sourceTree = "<group>"; };
-		CA278CC42188C1700079812F /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		CA278CC42188C1700079812F /* GoogleAutocompleteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoogleAutocompleteView.xib; sourceTree = "<group>"; };
 		CA278CC72188C40E0079812F /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
 		CA278CC82188C40E0079812F /* CitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesTableViewCell.xib; sourceTree = "<group>"; };
 		CA45D1EF2187046300CFA7C4 /* GoogleAutocomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAutocomplete.swift; sourceTree = "<group>"; };
-		CA45D1F1218710D900CFA7C4 /* TextFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModel.swift; sourceTree = "<group>"; };
+		CA45D1F1218710D900CFA7C4 /* GoogleAutocompleteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAutocompleteViewModel.swift; sourceTree = "<group>"; };
 		CABA16DA2185C17B007FE918 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CABA16DB2185C17B007FE918 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		CABA16E02185DB70007FE918 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
-		CABA16E22185F0AD007FE918 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		CABA16E22185F0AD007FE918 /* GoogleAutocompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAutocompleteView.swift; sourceTree = "<group>"; };
+		CAD6393D218AECFD005C9481 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CAD6393F218AEE1A005C9481 /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +94,13 @@
 		A64221912181A73B0018A7F4 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				CA278CC62188C3D90079812F /* Cells */,
-				CA45D1EE218700F900CFA7C4 /* GooglePlaces */,
 				A64221922181A73B0018A7F4 /* AppDelegate.swift */,
-				CA45D1ED21862A3400CFA7C4 /* Pager */,
-				CABA16E22185F0AD007FE918 /* TextFieldView.swift */,
-				CA45D1F1218710D900CFA7C4 /* TextFieldModel.swift */,
-				CA278CC42188C1700079812F /* TextFieldView.xib */,
 				A64221A12181A73D0018A7F4 /* Info.plist */,
+				A64221942181A73B0018A7F4 /* ViewController.swift */,
+				CAD6393C218AECE2005C9481 /* User */,
+				CA278CC62188C3D90079812F /* Cells */,
+				CA45D1EE218700F900CFA7C4 /* GoogleAutocomplete */,
+				CA45D1ED21862A3400CFA7C4 /* Pager */,
 				CA45D1EC21862A0500CFA7C4 /* Supporting Files */,
 			);
 			path = Signup;
@@ -127,19 +130,30 @@
 			isa = PBXGroup;
 			children = (
 				CABA16E02185DB70007FE918 /* Steps.swift */,
-				A64221942181A73B0018A7F4 /* ViewController.swift */,
 				CABA16DA2185C17B007FE918 /* CollectionViewCell.swift */,
 				CABA16DB2185C17B007FE918 /* CollectionViewCell.xib */,
 			);
 			path = Pager;
 			sourceTree = "<group>";
 		};
-		CA45D1EE218700F900CFA7C4 /* GooglePlaces */ = {
+		CA45D1EE218700F900CFA7C4 /* GoogleAutocomplete */ = {
 			isa = PBXGroup;
 			children = (
+				CABA16E22185F0AD007FE918 /* GoogleAutocompleteView.swift */,
+				CA45D1F1218710D900CFA7C4 /* GoogleAutocompleteViewModel.swift */,
+				CA278CC42188C1700079812F /* GoogleAutocompleteView.xib */,
 				CA45D1EF2187046300CFA7C4 /* GoogleAutocomplete.swift */,
 			);
-			path = GooglePlaces;
+			path = GoogleAutocomplete;
+			sourceTree = "<group>";
+		};
+		CAD6393C218AECE2005C9481 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CAD6393D218AECFD005C9481 /* UserModel.swift */,
+				CAD6393F218AEE1A005C9481 /* PictureModel.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		DD48E2B0CC1F901998FBBA59 /* Frameworks */ = {
@@ -213,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA278CCA2188C40E0079812F /* CitiesTableViewCell.xib in Resources */,
-				CA278CC52188C1710079812F /* TextFieldView.xib in Resources */,
+				CA278CC52188C1710079812F /* GoogleAutocompleteView.xib in Resources */,
 				A64221A02181A73D0018A7F4 /* LaunchScreen.storyboard in Resources */,
 				A642219D2181A73D0018A7F4 /* Assets.xcassets in Resources */,
 				A64221982181A73B0018A7F4 /* Main.storyboard in Resources */,
@@ -310,14 +324,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CABA16DC2185C17B007FE918 /* CollectionViewCell.swift in Sources */,
-				CA45D1F2218710D900CFA7C4 /* TextFieldModel.swift in Sources */,
+				CA45D1F2218710D900CFA7C4 /* GoogleAutocompleteViewModel.swift in Sources */,
 				A64221952181A73B0018A7F4 /* ViewController.swift in Sources */,
 				CA278CC92188C40E0079812F /* CitiesTableViewCell.swift in Sources */,
-				CABA16E32185F0AD007FE918 /* TextFieldView.swift in Sources */,
+				CABA16E32185F0AD007FE918 /* GoogleAutocompleteView.swift in Sources */,
 				CABA16E12185DB70007FE918 /* Steps.swift in Sources */,
 				CA45D1F02187046300CFA7C4 /* GoogleAutocomplete.swift in Sources */,
 				A64221932181A73B0018A7F4 /* AppDelegate.swift in Sources */,
+				CAD6393E218AECFD005C9481 /* UserModel.swift in Sources */,
 				A642219B2181A73B0018A7F4 /* Signup.xcdatamodeld in Sources */,
+				CAD63940218AEE1A005C9481 /* PictureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

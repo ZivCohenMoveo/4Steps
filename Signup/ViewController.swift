@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 
+// Home Page controller- has collectionView, header with progress bar, facebook login and autocomplete textField
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var stepsLabel: UILabel!
@@ -17,10 +18,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var textFieldView: UIView!
     @IBOutlet weak var progressBarContainer: UIView!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var userDetails: UILabel!
+    
     
     let numOfSteps = 4
     var curStep = 1
     var curPartOfSteps = 0
+    var customView : UIView!
+    var allBarWidth : CGFloat = 0.0
+    var widthOfPart : CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +34,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         stepsLabel.text = "Step \(curStep)"
         initCollectionView()
-        changeProgressBar()
+        setProgressBar()
         
         let btnFBLogin = FBSDKLoginButton()
         btnFBLogin.readPermissions = ["public_profile", "email", "user_friends"]
@@ -37,19 +43,46 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.view.addSubview(btnFBLogin)
         
         if FBSDKAccessToken.current() != nil {
-            //
+            fetchUserProfile()
         }
         else {
-            //
+            userDetails.text = ""
         }
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        //
+        
+        if FBSDKAccessToken.current() != nil {
+            fetchUserProfile()
+        }
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        //
+        userDetails.text = ""
+    }
+    
+    func fetchUserProfile()
+    {
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id, email, name, picture.width(480).height(480)"])
+        
+        graphRequest.start(completionHandler: { (connection, result, error) -> Void in
+            
+            if ((error) != nil)
+            {
+                print("Error took place: \(String(describing: error))")
+            }
+            else
+            {
+                print("Print entire fetched result: \(String(describing: result))")
+                let fbDetails = result as! NSDictionary
+            
+                let user = User(email: fbDetails["email"] as! String,
+                                id: fbDetails["id"] as! String,
+                                name: fbDetails["name"] as! String)
+                print(user)
+                self.userDetails.text = user.email
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,8 +120,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             curStep -= 1
             stepsLabel.text = "Step \(curStep)"
             stepsCollectionView.scrollToItem(at: IndexPath.init(row: curStep - 1, section: 0), at: .centeredHorizontally, animated: true)
-            changeProgressBar()
-            
+            setProgressBar()
         }
         if curStep < numOfSteps {
             nextButton.setTitle("Next", for: .normal)
@@ -101,22 +133,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             curStep += 1
             stepsLabel.text = "Step \(curStep)"
             stepsCollectionView.scrollToItem(at: IndexPath.init(row: curStep - 1, section: 0), at: .centeredHorizontally, animated: true)
-            changeProgressBar()
+            setProgressBar()
         }
         if curStep == numOfSteps{
             nextButton.setTitle("Finish", for: .normal)
         }
     }
     
-    func changeProgressBar() {
+    func setProgressBar() {
         
-        let allBarWidth = self.progressBarContainer.frame.width
-        let widthOfPart = CGFloat(allBarWidth) / CGFloat(numOfSteps + 1)
+        if let viewToRemove = self.customView {
+            viewToRemove.removeFromSuperview()
+        }
         
-        //self.progressBarContainer.subviews.forEach({ $0.removeFromSuperview() })
-        
-       let customView = UIView(frame: CGRect(x: 0 , y: 0, width: CGFloat(curStep) * widthOfPart, height: self.progressBarContainer.frame.height))
-       customView.backgroundColor = UIColor.red
-       self.progressBarContainer.addSubview(customView)
+        allBarWidth = self.progressBarContainer.frame.width
+        widthOfPart = CGFloat(allBarWidth) / CGFloat(numOfSteps + 1)
+        self.customView = UIView(frame: CGRect(x: 0 , y: 0, width: CGFloat(curStep) * widthOfPart, height: self.progressBarContainer.frame.height))
+        self.customView.backgroundColor = UIColor.red
+        self.progressBarContainer.addSubview(self.customView)
     }
 }

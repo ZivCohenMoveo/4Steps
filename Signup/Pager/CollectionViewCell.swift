@@ -8,6 +8,7 @@
 
 import UIKit
 
+// collection of cells- each cell is a step
 class CollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {

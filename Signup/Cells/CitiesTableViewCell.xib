@@ -19,16 +19,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC9-hy-RH0">
-                        <rect key="frame" x="144.5" y="14.5" width="31" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zC9-hy-RH0">
+                        <rect key="frame" x="21" y="14.5" width="278" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="zC9-hy-RH0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3ND-S0-3kg"/>
-                    <constraint firstItem="zC9-hy-RH0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mK8-ad-N4Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zC9-hy-RH0" secondAttribute="trailing" constant="5" id="XaX-WC-z46"/>
+                    <constraint firstItem="zC9-hy-RH0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="YPm-DN-PVS"/>
+                    <constraint firstItem="zC9-hy-RH0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZKa-0A-3q5"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

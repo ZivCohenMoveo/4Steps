@@ -12,7 +12,9 @@ protocol CitiesListDelegate: AnyObject {
     func citiesDidLoad(cities : [String])
 }
 
-class TextFieldModel: NSObject, AutoCompleteDelegate {
+// Logic of google autocomplete of cities
+
+class GoogleAutocompleteViewModel: NSObject, AutoCompleteDelegate {
   
     var googleAutocomplete = GoogleAutocomplete()
     var cities = [String]()

@@ -10,14 +10,15 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class TextFieldView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableViewDelegate, UITableViewDataSource {
+// View of google autocomplete of cities
+class GoogleAutocompleteView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var contentView: TextFieldView!
+    @IBOutlet var contentView: GoogleAutocompleteView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var citiesTableView: UITableView!
     
     fileprivate var googleAutocomplete = GoogleAutocomplete()
-    fileprivate var textFieldModel = TextFieldModel()
+    fileprivate var googleAutocompleteViewModel = GoogleAutocompleteViewModel()
     fileprivate var citiesToShow = [String]()
     
     override init(frame: CGRect) {
@@ -32,19 +33,19 @@ class TextFieldView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableVie
     
     private func commonInit() {
     
-        Bundle.main.loadNibNamed("TextFieldView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("GoogleAutocompleteView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         textField.delegate = self
-        textFieldModel.delegate = self
+        googleAutocompleteViewModel.delegate = self
     }
     
     @IBAction func textFieldEditingChange(_ sender: Any) {
     
         if let value = self.textField.text {
             if value != "" {
-                self.textFieldModel.valueChanged(value)
+                self.googleAutocompleteViewModel.valueChanged(value)
             }
             else {
                 removeTable()
@@ -85,19 +86,19 @@ class TextFieldView: UIView, UITextFieldDelegate, CitiesListDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return textFieldModel.cities.count
+        return googleAutocompleteViewModel.cities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CITY_TABLE_VIEW_CELL, for: indexPath) as! CitiesTableViewCell
-        cell.initCell(text: textFieldModel.cities[indexPath.row])
+        cell.initCell(text: googleAutocompleteViewModel.cities[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let seletedCity = textFieldModel.cities[indexPath.row]
+        let seletedCity = googleAutocompleteViewModel.cities[indexPath.row]
         textField.text = seletedCity
-        textFieldModel.selectedCity = seletedCity
+        googleAutocompleteViewModel.selectedCity = seletedCity
         removeTable()
     }
 }
